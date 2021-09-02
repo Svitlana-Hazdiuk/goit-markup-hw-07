@@ -751,6 +751,10 @@ header {
   align-items: baseline;
 }
 
+.address-block {
+  margin-right: 70px;
+}
+
 .logo.footer-sign {
   display: inline-block;
   padding: 0;
@@ -784,7 +788,6 @@ header {
 }
 
 .join-block {
-  margin-left: 70px;
   margin-right: 93px;
 }
 
