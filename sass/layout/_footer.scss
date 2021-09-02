@@ -1,13 +1,13 @@
+.footer-block {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  background-color: $dark-background;
+}
+
 .footer-content {
   display: flex;
   align-items: baseline;
-
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-
-.footer-block {
-  background-color: $dark-background;
 }
 
 .logo.footer-sign {
@@ -16,7 +16,7 @@
   margin-bottom: 20px;
 }
 
-.address-items {
+.footer-address {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -24,22 +24,26 @@
   letter-spacing: 0.03em;
 }
 
-.address-footer {
+.address-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.address-link {
+  text-decoration: none;
+  color: $white-text-op60;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: $blue-color;
+  }
+}
+
+.address-link-white {
   color: $white-text;
-  text-decoration: none;
-  margin-bottom: 9px;
 }
 
-.contacts-footer {
-  color: $white-text-op60;
-  text-decoration: none;
-  margin-bottom: 9px;
-}
-
-.email-footer {
-  color: $white-text-op60;
-  text-decoration: none;
-}
 .join-block {
   margin-left: 70px;
   margin-right: 93px;
@@ -73,10 +77,11 @@ footer .social-list__icon {
   background-color: transparent;
   border: 1px solid $white-color-op30;
   border-radius: 4px;
+  color: $white-text-op60;
 
   &:focus {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    background-color: white;
+    background-color: $dark-background;
   }
 
   &::placeholder {

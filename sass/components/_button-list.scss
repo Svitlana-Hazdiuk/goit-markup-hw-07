@@ -35,6 +35,11 @@
   }
 }
 
+.button-filter.current {
+  background-color: $blue-color;
+  color: $white-text;
+}
+
 .filter-item + .filter-item {
   margin-left: 8px;
 }
